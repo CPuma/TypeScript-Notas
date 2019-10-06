@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5", // tsc app.ts --target es 5     <- version en terminal
+    "module": "amd",
+    "strict": true,
+    "noImplicitAny": false, // Si no especificamos una propiedad, SERa del tipo ANY
+    "esModuleInterop": true,
+    "sourceMap": true, // Genera el .map . esto nos dejara depurar en el navegador el  codigo TS
+    "removeComments": true, // remueve los comenatios del TS al compilar a JS ___ o ___ al compilar :  tsc app.ts --removeComments
+    "outFile": "build/main.js", // Compila todos los TS en un solo archivo JS --- o --- tsc --outFile main.js app app2 app3 
+    // "outDir": "./",
+  },
+  "include": [ // incluye los archivos de este directorio
+    "app/**/*"
+  ],
+  "exclude": [ // excluye los TS de este directorio
+    "node_modules",
+    "src/",
+    "build"
+  ]
+}

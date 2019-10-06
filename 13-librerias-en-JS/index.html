@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
+</head>
+
+<body>
+
+
+    <h1>Hola Mundo <small>saludos</small></h1>
+    <p>
+        Este es un texto
+    </p>
+    <button type="button" id="botAlerta">Click aquí</button>
+
+   
+
+    <!-- SYSTEMJS . load modules -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+
+    <script>
+        SystemJS.config({
+            baseURL: "/js",
+            map: {
+                "jquery": "../node_modules/jquery/dist/jquery.min.js",
+                "sweetalert2": "https://cdn.jsdelivr.net/npm/sweetalert2@8.18.0/dist/sweetalert2.all.min.js"
+            },
+            defaultJSExtensions: true  // para que reconozca la EXTENSION, si no bota error
+        });
+        SystemJS.import("archivos-de-definicion.js")       // file MAIN
+    </script>
+</body>
+
+</html>

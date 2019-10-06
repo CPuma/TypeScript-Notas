@@ -1,0 +1,19 @@
+{
+  "name": "13-librerias-en-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "sweetalert2": "^8.18.0",
+    "systemjs": "^0.19.41"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31"
+  }
+}
