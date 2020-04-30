@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "sweetalert2": "^8.18.0",
     "systemjs": "^0.19.41"
   },
